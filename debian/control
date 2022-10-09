@@ -1,0 +1,60 @@
+Source: khangman
+Section: kde
+Priority: optional
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Norbert Preining <norbert@preining.info>,
+           Sune Vuorela <sune@debian.org>,
+Build-Depends: cmake (>= 3.5~),
+               debhelper-compat (= 13),
+               extra-cmake-modules (>= 5.15.0~),
+               gettext,
+               libkeduvocdocument-dev,
+               libkf5completion-dev (>= 5.17.0~),
+               libkf5config-dev (>= 5.17.0~),
+               libkf5configwidgets-dev (>= 5.17.0~),
+               libkf5coreaddons-dev (>= 5.17.0~),
+               libkf5crash-dev (>= 5.17.0~),
+               libkf5doctools-dev (>= 5.17.0~),
+               libkf5i18n-dev (>= 5.17.0~),
+               libkf5kio-dev (>= 5.17.0~),
+               libkf5newstuff-dev (>= 5.17.0~),
+               libkf5notifications-dev (>= 5.17.0~),
+               libkf5xmlgui-dev (>= 5.17.0~),
+               libphonon4qt5-dev (>= 4.6.60),
+               libphonon4qt5experimental-dev,
+               libqt5svg5-dev (>= 5.4),
+               pkg-kde-tools (>> 0.15.15),
+               qtbase5-dev (>= 5.4),
+               qtdeclarative5-dev (>= 5.4),
+Standards-Version: 4.5.1
+Rules-Requires-Root: no
+Homepage: http://edu.kde.org/
+Vcs-Browser: https://salsa.debian.org/qt-kde-team/kde/khangman
+Vcs-Git: https://salsa.debian.org/qt-kde-team/kde/khangman.git
+
+Package: khangman
+Architecture: any
+Section: misc
+Depends: fonts-dustin,
+         kdeedu-kvtml-data,
+         qml-module-qtgraphicaleffects,
+         qml-module-qtmultimedia,
+         qml-module-qtquick-controls,
+         qml-module-qtquick-dialogs,
+         qml-module-qtquick-layouts,
+         qml-module-qtquick-window2,
+         qml-module-qtquick2,
+         ${misc:Depends},
+         ${shlibs:Depends},
+Suggests: khelpcenter
+Breaks: ${kde-l10n:all}
+Replaces: ${kde-l10n:all}
+Description: Hangman word puzzle
+ KHangMan is the well-known Hangman game, aimed towards children aged 6 and
+ above.
+ .
+ It picks a random word which the player must reveal by guessing if it contains
+ certain letters.  As the player guesses letters, the word is gradually
+ revealed, but 10 wrong guesses will end the game.
+ .
+ This package is part of the KDE education module.

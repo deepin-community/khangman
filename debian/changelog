@@ -1,0 +1,785 @@
+khangman (4:21.08.0-1) unstable; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.08.0).
+
+ -- Norbert Preining <norbert@preining.info>  Mon, 16 Aug 2021 16:12:53 +0900
+
+khangman (4:21.04.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.04.0).
+  * Borrow minimal upstream signing key from k3b.
+  * Drop Kubuntu from maintainer name.
+  * Removed Eshat Cakar, Maximiliano Curia from the uploaders, thanks
+    for your work on the package!
+  * Added myself to the uploaders.
+
+ -- Norbert Preining <norbert@preining.info>  Wed, 28 Apr 2021 10:06:10 +0900
+
+khangman (4:20.12.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Re-export upstream signing key without extra signatures.
+  * Remove obsolete field Name from debian/upstream/metadata (already present in
+    machine-readable debian/copyright).
+  * Update the build dependencies according to the upstream build system:
+    - bump extra-cmake-modules to 5.15.0
+    - bump KF packages to 5.17.0
+    - drop libkf5declarative-dev, no more needed
+  * Bump the debhelper compatibility to 13:
+    - switch the debhelper-compat build dependency to 13
+  * Bump Standards-Version to 4.5.1, no changes required.
+  * Add the configuration for the CI on salsa.
+  * Add Rules-Requires-Root: no.
+
+ -- Pino Toscano <pino@debian.org>  Thu, 07 Jan 2021 22:00:37 +0100
+
+khangman (4:20.04.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Switch Vcs-* fields to salsa.debian.org.
+  * Update watch file to the new release-service location.
+  * Update the build dependencies according to the upstream build system:
+    - bump cmake to 3.5
+    - explicitly add gettext
+  * Switch from dhmk to the dh sequencer:
+    - invoke the dh sequencer using the kf5 addon
+    - call the right debhelper command instead of $(overridden_command)
+    - manually force the generation of the substvars for the kde-l10n breaks
+  * Bump the debhelper compatibility to 12:
+    - switch the debhelper build dependency to debhelper-compat 12
+    - remove debian/compat
+  * Bump Standards-Version to 4.5.0, no changes required.
+
+ -- Pino Toscano <pino@debian.org>  Sat, 02 May 2020 12:53:15 +0200
+
+khangman (4:17.08.3-2) unstable; urgency=medium
+
+  * Team upload.
+  * Adjust again l10npkgs_firstversion_ok to the fixed version of kde-
+    l10n.
+
+ -- Pino Toscano <pino@debian.org>  Mon, 20 Nov 2017 20:55:33 +0100
+
+khangman (4:17.08.3-1) unstable; urgency=medium
+
+  * Team upload.
+  * Upload to unstable.
+  * New upstream release.
+  * Adjust l10npkgs_firstversion_ok to the version where kde-l10n will drop
+    translations.
+  * Simplify watch file, and switch it to https.
+  * Bump Standards-Version to 4.1.1, no changes required.
+  * Stop forcing debian/tmp as local installation directory, installing
+    everything to the final location
+    - make sure to remove the local fonts, as it already depends on (and use)
+      the system versions
+    - drop khangman.install, khangman.manpages, and not-installed, no more
+      useful now
+
+ -- Pino Toscano <pino@debian.org>  Sun, 19 Nov 2017 12:27:43 +0100
+
+khangman (4:17.08.1-1) experimental; urgency=medium
+
+  * New upstream release (17.08.1)
+  * Bump Standards-Version to 4.1.0.
+  * Update upstream metadata
+  * Bump kde-l10n breaks/replaces versions
+  * Release to experimental
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 18 Sep 2017 15:06:23 +0200
+
+khangman (4:17.08.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Tue, 05 Sep 2017 14:01:23 +0000
+
+khangman (4:17.08.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 17 Aug 2017 09:35:26 +0000
+
+khangman (4:17.04.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 12 Jul 2017 10:21:23 +0000
+
+khangman (4:17.04.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 07 Jun 2017 12:21:51 +0000
+
+khangman (4:17.04.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 11 May 2017 18:17:54 +0000
+
+khangman (4:17.04.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 19 Apr 2017 13:04:07 +0000
+
+khangman (4:16.12.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 08 Mar 2017 13:48:23 +0000
+
+khangman (4:16.12.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 08 Feb 2017 16:59:03 +0000
+
+khangman (4:16.12.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 11 Jan 2017 13:18:59 +0000
+
+khangman (4:16.12.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 14 Dec 2016 16:27:44 +0000
+
+khangman (4:16.08.3-1) unstable; urgency=medium
+
+  [ Automatic packaging ]
+  * Update build-deps and deps with the info from cmake
+
+  [ Maximiliano Curia ]
+  * New upstream release (16.08.3)
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 23 Nov 2016 21:10:29 +0100
+
+khangman (4:16.08.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Mon, 21 Nov 2016 13:54:24 +0000
+
+khangman (4:16.08.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Fri, 14 Oct 2016 13:39:53 +0000
+
+khangman (4:16.08.1-1) unstable; urgency=medium
+
+  [ Automatic packaging ]
+  * Update build-deps and deps with the info from cmake
+
+  [ Maximiliano Curia ]
+  * New upstream release (16.08.1)
+  * Update install files
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 19 Oct 2016 12:42:35 +0200
+
+khangman (4:16.08.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Fri, 16 Sep 2016 13:06:48 +0000
+
+khangman (4:16.08.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 17 Aug 2016 11:48:48 +0000
+
+khangman (4:16.04.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Tue, 12 Jul 2016 11:38:26 +0000
+
+khangman (4:16.04.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 16 Jun 2016 11:08:44 +0000
+
+khangman (4:16.04.1-1) unstable; urgency=medium
+
+  [ Automatic packaging ]
+  * Bump Standards-Version to 3.9.8
+
+  [ Maximiliano Curia ]
+  * Add upstream metadata (DEP-12)
+  * debian/control: Update Vcs-Browser and Vcs-Git fields
+
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 26 May 2016 00:47:54 +0200
+
+khangman (4:15.12.1-1) experimental; urgency=medium
+
+  * New upstream release (15.12.0).
+  * New upstream release (15.12.1).
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 01 Feb 2016 10:23:18 +0100
+
+khangman (4:15.08.3-1) unstable; urgency=medium
+
+  * New upstream release (15.08.3).
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 02 Dec 2015 12:39:17 +0100
+
+khangman (4:15.08.1-1) unstable; urgency=medium
+
+  * New upstream release (15.08.1).
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 19 Sep 2015 02:45:18 +0200
+
+khangman (4:15.08.0-1) unstable; urgency=medium
+
+  * Upload to unstable
+
+  [ Maximiliano Curia ]
+  * Bump minimum version requirement for qtbase5-dev, libqt5svg5-dev, and
+    extra-cmake-modules.
+  * Add qtdeclarative5-dev, libkf5declarative-dev, and kio-dev to
+    build-depends
+  * Update khangman.install to remove usr/lib/*/libkhangmanengine.so and
+    usr/share/kxmlgui5/khangman/khangmanui.rc as they are no longer built by
+    the package
+
+  [ Scott Kitterman ]
+  * New upstream release
+  * Update packaging now that license of themes/winter/khangman_winter.svg has
+    been clarified as being DFSG free
+    - Remove themes/winter/khangman_winter.svg from Files-excluded in debian/
+      copyright
+    - Remove debian/patches/drop_cc-nc_theme (and the patch directory)
+    - Adjust debian/watch for the elimination of the dfsg suffix
+
+ -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 03 Sep 2015 15:33:28 -0400
+
+khangman (4:14.12.3+dfsg-1) experimental; urgency=medium
+
+  * New upstream release (14.12.3+dfsg).
+
+ -- Maximiliano Curia <maxy@debian.org>  Sun, 29 Mar 2015 15:13:48 +0200
+
+khangman (4:14.12.3-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+  * Remove wildcard from not-installed and hard code path.
+  * Manual merge kubuntu_unstable.
+  * Merge of course broke my build.
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Fri, 13 Mar 2015 14:26:50 -0700
+
+khangman (4:14.12.2+dfsg-1) experimental; urgency=medium
+
+  [ Scarlett Clark ]
+  * Remove kdelibs5-dev depend version as there was not a new release.
+  * Correct the paths in the not-installed.
+
+  [ Maximiliano Curia ]
+  * New dfsg version (14.12.2+dfsg).
+  * Update copyright information.
+  * New patch: drop_cc-nc_theme
+
+ -- Maximiliano Curia <maxy@debian.org>  Sun, 22 Feb 2015 15:22:18 +0100
+
+khangman (4:14.12.2-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Tue, 10 Feb 2015 09:29:46 -0800
+
+khangman (4:14.12.0-0ubuntu1) vivid; urgency=medium
+
+  * Initial release for KDE applications 14.12 series
+   - Change maintainer to Debian/Kubuntu
+   - Remove X-Ubuntu entries no longer applicable.
+   - Fix Watch file applications locations
+   - Fix VCS for new kde-applications location
+   - KF5 port
+  * Debian merge, no remaining changes.
+  * Add missing depend libqt5svg5-dev
+  * Fix not-installed paths.
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Mon, 15 Dec 2014 17:07:35 +0100
+
+khangman (4:4.14.2-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Fri, 10 Oct 2014 05:08:13 -0700
+
+khangman (4:4.14.1-1) unstable; urgency=medium
+
+  * New upstream release (4.14.1).
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 17 Sep 2014 09:44:36 +0200
+
+khangman (4:4.14.1-0ubuntu1) utopic; urgency=medium
+
+  * New upstream release
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Mon, 22 Sep 2014 17:14:56 +0200
+
+khangman (4:4.14.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update install file.
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 22 Aug 2014 05:24:28 +0200
+
+khangman (4:4.14.0-0ubuntu1) utopic; urgency=medium
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 20 Aug 2014 13:09:01 +0200
+
+khangman (4:4.13.97-0ubuntu1) utopic; urgency=medium
+
+  * New upstream beta release RC
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Fri, 01 Aug 2014 16:47:50 +0200
+
+khangman (4:4.13.95-0ubuntu1) utopic; urgency=medium
+
+  * New upstream beta release
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Wed, 30 Jul 2014 18:17:25 +0200
+
+khangman (4:4.13.90-0ubuntu1) utopic; urgency=medium
+
+  [ Scarlett Clark ]
+  * New upstream beta release
+
+  [ Jonathan Riddell ]
+  * Add appdata file to .install
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Thu, 24 Jul 2014 23:07:18 +0200
+
+khangman (4:4.13.3-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 29 Jul 2014 10:01:34 +0200
+
+khangman (4:4.13.2-0ubuntu1) utopic; urgency=medium
+
+  * new upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 18 Jun 2014 11:58:10 +0100
+
+khangman (4:4.13.1-1ubuntu1) utopic; urgency=medium
+
+  * Merge with Debian, no remaining changes
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Mon, 16 Jun 2014 17:15:02 +0200
+
+khangman (4:4.13.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 23 May 2014 12:28:18 +0200
+
+khangman (4:4.13.0-0ubuntu1) trusty; urgency=medium
+
+  * New upstream KDE Software Compilation release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 10 Apr 2014 22:03:46 +0100
+
+khangman (4:4.12.97-0ubuntu1) trusty; urgency=medium
+
+  * New upstream release candidate
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Wed, 02 Apr 2014 11:27:18 +0200
+
+khangman (4:4.12.95-0ubuntu1) trusty; urgency=medium
+
+  * New upstream beta release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Sun, 23 Mar 2014 12:29:11 +0100
+
+khangman (4:4.12.90-0ubuntu1) trusty; urgency=medium
+
+  * New upstream beta release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 19 Mar 2014 10:58:13 +0000
+
+khangman (4:4.12.4-1) unstable; urgency=low
+
+  * Bump Standards-Version to 3.9.5, no changes needed.
+  * New upstream release.
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 28 Apr 2014 12:24:48 +0200
+
+khangman (4:4.12.3-0ubuntu1) trusty; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Tue, 04 Mar 2014 20:49:21 +0100
+
+khangman (4:4.12.2-0ubuntu1) trusty; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Wed, 05 Feb 2014 00:01:27 +0000
+
+khangman (4:4.12.1-0ubuntu1) trusty; urgency=low
+
+  * New upstream bugfix release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Thu, 16 Jan 2014 08:18:22 +0000
+
+khangman (4:4.12.0-0ubuntu1) trusty; urgency=low
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 18 Dec 2013 17:08:31 +0000
+
+khangman (4:4.11.97-0ubuntu1) trusty; urgency=low
+
+  * New upstream RC release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 29 Nov 2013 13:09:53 +0000
+
+khangman (4:4.11.95-0ubuntu1) trusty; urgency=low
+
+  * New upstream beta release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Mon, 25 Nov 2013 18:06:44 +0100
+
+khangman (4:4.11.80-0ubuntu1) trusty; urgency=low
+
+  * New upstream beta release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Sat, 23 Nov 2013 17:41:18 +0100
+
+khangman (4:4.11.3-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update build dependencies.
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 08 Nov 2013 15:24:08 +0100
+
+khangman (4:4.11.2-1) experimental; urgency=low
+
+  * New upstream release.
+  * Update install files.
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 07 Oct 2013 16:53:17 +0200
+
+khangman (4:4.11.2-0ubuntu1) saucy; urgency=low
+
+  * New upstream bugfix release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 30 Sep 2013 14:25:54 +0100
+
+khangman (4:4.11.1-0ubuntu1) saucy; urgency=low
+
+  * New upstream bugfix release.
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Fri, 06 Sep 2013 22:23:36 +0100
+
+khangman (4:4.11.0-0ubuntu1) saucy; urgency=low
+
+  [ Howard Chan ]
+  * New upstream release
+
+  [ Jonathan Riddell ]
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 14 Aug 2013 00:16:40 +0100
+
+khangman (4:4.10.97-0ubuntu1) saucy; urgency=low
+
+  * New upstream RC 2 release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 26 Jul 2013 19:35:53 +0100
+
+khangman (4:4.10.95-0ubuntu1) saucy; urgency=low
+
+  * New upstream RC release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Fri, 19 Jul 2013 12:32:31 +0000
+
+khangman (4:4.10.90-0ubuntu1) saucy; urgency=low
+
+  * New upstream bet release
+
+ -- Michał Zając <quintasan@kubuntu.org>  Fri, 28 Jun 2013 18:15:10 +0100
+
+khangman (4:4.10.80-0ubuntu1) saucy; urgency=low
+
+  * New upstream release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Fri, 21 Jun 2013 01:18:45 +0100
+
+khangman (4:4.10.5-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 12 Jul 2013 16:46:01 +0200
+
+khangman (4:4.10.4-1) experimental; urgency=low
+
+  * New upstream release.
+  * Add watch file.
+  * Update install file.
+  * Bump debhelper build-dep and compat to 9.
+  * Bump Standards-Version to 3.9.4.
+  * Update vcs fields.
+  * Add myself to uploaders.
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 14 Jun 2013 14:31:50 +0200
+
+khangman (4:4.10.4-0ubuntu1) saucy-proposed; urgency=low
+
+  [ Rohan Garg ]
+  * New upstream bugfix release
+
+  [ Jonathan Riddell ]
+  * update not-installed
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Fri, 07 Jun 2013 00:33:10 +0100
+
+khangman (4:4.10.3-0ubuntu1) saucy; urgency=low
+
+  * New upstream release
+  * Merge with Debian, no changes remaining
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 23 May 2013 11:04:40 +0000
+
+khangman (4:4.10.2-1) experimental; urgency=low
+
+  * New upstream release.
+  * Update uploaders.
+  * Bump build-deps.
+  * Update install-file.
+
+ -- Sune Vuorela <sune@debian.org>  Sun, 07 Apr 2013 16:49:01 +0000
+
+khangman (4:4.10.2-0ubuntu1) raring; urgency=low
+
+  * New upstream bugfix release
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Sun, 31 Mar 2013 14:49:07 +0200
+
+khangman (4:4.10.1-0ubuntu1) raring-proposed; urgency=low
+
+  * New upstream bugfix release
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Tue, 05 Mar 2013 15:46:17 +0000
+
+khangman (4:4.10.0-0ubuntu1) raring-proposed; urgency=low
+
+  * New upstream release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Wed, 06 Feb 2013 11:54:32 +0000
+
+khangman (4:4.9.98-0ubuntu1) raring-proposed; urgency=low
+
+  * New upstream release candidate
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 18 Jan 2013 15:38:01 +0000
+
+khangman (4:4.9.97-0ubuntu1) raring; urgency=low
+
+  * New upstream release candidate
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Thu, 03 Jan 2013 22:35:44 +0100
+
+khangman (4:4.9.95-0ubuntu1) raring; urgency=low
+
+  * New upstream RC release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 18 Dec 2012 23:30:30 +0000
+
+khangman (4:4.9.90-0ubuntu1) raring-proposed; urgency=low
+
+  * New upstream beta release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 07 Dec 2012 17:54:34 +0000
+
+khangman (4:4.9.80-0ubuntu1) raring; urgency=low
+
+  [ Jonathan Riddell ]
+  * New upstream beta release
+
+  [ Philip Muškovac ]
+  * Remove duplicate copyright field to make lintian happy
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Fri, 23 Nov 2012 23:29:53 +0100
+
+khangman (4:4.9.3-0ubuntu1) raring; urgency=low
+
+  * New upstream release (LP: #1074747)
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Tue, 06 Nov 2012 22:36:48 +0100
+
+khangman (4:4.9.2-0ubuntu1) quantal-proposed; urgency=low
+
+  * New upstream bugfix release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 02 Oct 2012 15:28:11 +0100
+
+khangman (4:4.9.1-0ubuntu1) quantal; urgency=low
+
+  [ Harald Sitter ]
+  * New upstream release
+
+  [ Philip Muškovac ]
+  * Change sonames from 4.9.0 to 4.9.*
+
+ -- Harald Sitter <apachelogger@ubuntu.com>  Mon, 10 Sep 2012 18:32:54 +0530
+
+khangman (4:4.9.0-0ubuntu2) quantal; urgency=low
+
+  * Build-dep on kdelibs 4.9.0a, adjust .install files to new library
+    version no
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 02 Aug 2012 11:57:52 +0100
+
+khangman (4:4.9.0-0ubuntu1) quantal; urgency=low
+
+  * Use direct build-depends versions rather than kde-sc-dev-latest
+  * New upstream release
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 26 Jul 2012 22:26:10 +0100
+
+khangman (4:4.8.90-0ubuntu1) quantal; urgency=low
+
+  [ Felix Geyer ]
+  * New upstream beta release.
+
+  [ Jonathan Riddell ]
+  * Install new files
+
+ -- Felix Geyer <debfx@ubuntu.com>  Mon, 11 Jun 2012 23:29:58 +0200
+
+khangman (4:4.8.80-0ubuntu1) quantal; urgency=low
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 06 Jun 2012 14:07:37 +0100
+
+khangman (4:4.8.4-1) unstable; urgency=low
+
+  * Prepare new upstream
+
+ -- Sune Vuorela <sune@debian.org>  Sun, 17 Jun 2012 00:34:51 +0200
+
+khangman (4:4.8.3-0ubuntu1) quantal; urgency=low
+
+  * New upstream release
+    - Add libssl-dev to build-dep
+    - Bump Standard-Version to 3.9.3 (no change)
+
+ -- Jonathan Kolberg <bulldog98@kubuntu.org>  Thu, 03 May 2012 10:19:57 +0200
+
+khangman (4:4.8.2-0ubuntu1) precise; urgency=low
+
+  * New upstream release
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Mon, 02 Apr 2012 00:01:01 +0200
+
+khangman (4:4.8.1-0ubuntu1) precise; urgency=low
+
+  * New upstream release
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Sun, 04 Mar 2012 20:28:30 +0100
+
+khangman (4:4.8.0-0ubuntu1) precise; urgency=low
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 20 Jan 2012 12:10:30 +0000
+
+khangman (4:4.7.97-0ubuntu1) precise; urgency=low
+
+  * New upstream release candidate
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 05 Jan 2012 12:18:27 +0000
+
+khangman (4:4.7.95-0ubuntu1) precise; urgency=low
+
+  * New upstream release candidate
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Sat, 24 Dec 2011 20:21:25 +0100
+
+khangman (4:4.7.90-0ubuntu1) precise; urgency=low
+
+  * New upstream beta release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 16 Dec 2011 13:14:40 +0000
+
+khangman (4:4.7.4-2) unstable; urgency=low
+
+  * Team upload. Upload to unstable.
+
+ -- Pino Toscano <pino@debian.org>  Wed, 07 Mar 2012 11:39:27 +0100
+
+khangman (4:4.7.4-1) experimental; urgency=low
+
+  * New upstream release.
+
+  [ José Manuel Santamaría Lema ]
+  * Bump kde-sc-dev-latest build dependency to 4:4.7.4.
+
+  [ Eshat Cakar ]
+  * Depend on new fonts-dustin package.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 18 Dec 2011 01:38:30 +0100
+
+khangman (4:4.7.3-0ubuntu1) precise; urgency=low
+
+  * New upstream release
+  * Merge with Debian Git, no changes
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 23 Nov 2011 23:47:00 +0000
+
+khangman (4:4.7.2-1) experimental; urgency=low
+
+  * Initial release. Start from the Kubuntu packaging, thanks!
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 03 Dec 2011 10:42:24 -0300
+
+khangman (4:4.7.2-0r2) raring; urgency=low
+
+  * Initial release. Start from the Kubuntu packaging, thanks!
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 22 Oct 2011 00:10:57 +0200
+
+khangman (4:4.7.1-0ubuntu2) oneiric; urgency=low
+
+  * No-change rebuild so translations aren't stripped from .desktop
+    files anymore.
+
+ -- Felix Geyer <debfx-pkg@fobos.de>  Fri, 16 Sep 2011 00:55:17 +0200
+
+khangman (4:4.7.1-0ubuntu1) oneiric; urgency=low
+
+  * New upstream release
+
+ -- Jonathan Kolberg <bulldog98@kubuntu-de.org>  Fri, 09 Sep 2011 23:33:04 -0400
+
+khangman (4:4.7.0-0ubuntu1) oneiric; urgency=low
+
+  * New upstream release
+
+ -- Harald Sitter <apachelogger@ubuntu.com>  Sat, 23 Jul 2011 14:54:56 +0200
+
+khangman (4:4.6.90+repack-0ubuntu1) oneiric; urgency=low
+
+  * Initial release (moved out of kdeedu)
+  * Repack upstream source to include a copy of GFDL1.2
+
+ -- Harald Sitter <apachelogger@ubuntu.com>  Sun, 10 Jul 2011 11:55:40 +0200

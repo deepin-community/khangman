@@ -1,0 +1,122 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: khangman
+Upstream-Contact: kde-edu@mail.kde.org
+Source: git://anongit.kde.org/khangman
+
+Files: *
+Copyright: 2010, Adam Rakowski <foo-script@o2.pl> (GSoC 2010)
+           2006, Anne-Marie Mahfouf
+           2001-2010, Anne-Marie Mahfouf <annma@kde.org>
+           2003, Dustin Norlander
+           1989-1991, Free Software Foundation, Inc
+           2012, Laszlo Papp <lpapp@kde.org>
+           2011, Marco Martin <mart@kde.org>
+           2005, Mark Kretschmann <markey@web.de>
+           2005, Michael Goettsche
+           2007-2010, Pino Toscano <pino@kde.org>
+           2011, Sebastian Kügler <sebas@kde.org>
+License: GPL-2+
+
+Files: doc/*
+Copyright: 2001-2007, Anne-Marie Mahfouf <annma@kde.org>
+License: GFDL-1.2+
+ Permission is granted to copy, distribute and/or modify this document
+ under the terms of the GNU Free Documentation License, Version 1.2
+ or any later version published by the Free Software Foundation;
+ with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+ .
+ On Debian systems, the full text of the GNU Free Documentation License
+ version 1.2 can be found in the file `/usr/share/common-licenses/GFDL-1.2'.
+
+Files: src/harmattan/GamePage.qml
+       src/harmattan/LetterElement.qml
+       src/harmattan/ListItem.qml
+       src/harmattan/MainPage.qml
+       src/harmattan/MainSettingsPage.qml
+       src/harmattan/khangmanenginehelper.cpp
+       src/harmattan/khangmanenginehelper.h
+       src/harmattan/main.cpp
+       src/harmattan/main.qml
+       src/plasma-active/src/main.cpp
+       src/plasma-active/src/mainwindow.cpp
+       src/plasma-active/src/mainwindow.h
+Copyright: 2011-2012, Laszlo Papp <lpapp@kde.org>
+           2011, Marco Martin <mart@kde.org>
+           2011, Sebastian Kügler <sebas@kde.org>
+License: LGPL-2.1+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2.1 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ .
+ On Debian systems, the full text of the GNU Lesser General Public License
+ version 2.1 can be found in the file `/usr/share/common-licenses/LGPL-2.1'.
+
+Files: src/engine/cmake/FindKHangManEngine.cmake
+       src/harmattan/CommonDialog.qml
+       src/harmattan/MySelectionDialog.qml
+       src/harmattan/UIConstants.js
+Copyright: 2012, Laszlo Papp
+           2011, Nokia Corporation and/or its subsidiary(-ies)
+License: BSD-3-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are
+ met:
+   * Redistributions of source code must retain the above copyright
+     notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above copyright
+     notice, this list of conditions and the following disclaimer in
+     the documentation and/or other materials provided with the
+     distribution.
+   * Neither the name of Nokia Corporation and its Subsidiary(-ies) nor
+     the names of its contributors may be used to endorse or promote
+     products derived from this software without specific prior written
+     permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+ OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Files: debian/*
+Copyright: 2011, Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+           2011, Harald Sitter <apachelogger@ubuntu.com>
+License: GPL-2+
+
+License: GPL-2+
+ This program is free software; you can redistribute it
+ and/or modify it under the terms of the GNU General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later
+ version.
+ .
+ This program is distributed in the hope that it will be
+ useful, but WITHOUT ANY WARRANTY; without even the implied
+ warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+ PURPOSE.  See the GNU General Public License for more
+ details.
+ .
+ You should have received a copy of the GNU General Public
+ License along with this package; if not, write to the Free
+ Software Foundation, Inc., 51 Franklin St, Fifth Floor,
+ Boston, MA  02110-1301 USA
+ .
+ On Debian systems, the full text of the GNU General Public
+ License version 2 can be found in the file
+ `/usr/share/common-licenses/GPL-2'.
